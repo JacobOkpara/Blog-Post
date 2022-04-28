@@ -25,6 +25,6 @@ export default async function handler(req, res) {
       return res.status(404).json({ error: "Post Not Found" });
     }
     await Post.findByIdAndDelete(query.postId);
-    res.status(200).json({ msg: "Post delteted successfully." });
+    res.status(200).json({ msg: "Post deleted successfully." });
   }
 }
